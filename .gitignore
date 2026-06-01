@@ -1,7 +1,7 @@
 _output/
 .jupyterlite.doit.db
 
-# Instructor files — keep local only, never push to public repo
-Python_Power_Hour.ipynb
-Python_Power_Hour_Answer_Key.ipynb
-Python_Power_Hour_Student.ipynb
+# Instructor working files — keep local only (root-level only, not instructor/)
+/Python_Power_Hour.ipynb
+/Python_Power_Hour_Answer_Key.ipynb
+/Python_Power_Hour_Student.ipynb

@@ -26,6 +26,11 @@ jobs:
         run: pip install -r requirements.txt
       - name: Build JupyterLite
         run: jupyter lite build --contents content --output-dir _output
+      - name: Build instructor answer key
+        run: |
+          pip install nbconvert
+          mkdir -p _output/instructor
+          jupyter nbconvert --to html instructor/Python_Power_Hour_Answer_Key.ipynb --output-dir _output/instructor/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _output
